@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 5px solid purple;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .square:hover {
+            background-color: green;
+        }
+
+        .square:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            .square {
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>

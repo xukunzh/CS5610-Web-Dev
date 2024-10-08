@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Card</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .name-card {
+            background-color: yellow;
+            border: 5px solid;
+            padding: 20px;
+            min-width: 400px;
+            display: inline-block;
+            transition: border 0.3s ease;
+        }
+        .first-name {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .first-letter {
+            color: red;
+            font-size: 100px;
+            font-weight: bold;
+        }
+        .rest-of-name {
+            color: orange;
+            font-size: 50px;
+        }
+        .mid-last-name {
+            font-weight: bold;
+            color: black;
+            font-size: 30px;
+            text-align: right;
+        }
+        .name-card:hover {
+            border-width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="name-card">
+        <div class="first-name">
+            <span class="first-letter">C</span><span class="rest-of-name">handler</span>
+        </div>
+        <div class="mid-last-name">Muriel Bing</div>
+    </div>
+</body>
+</html>
