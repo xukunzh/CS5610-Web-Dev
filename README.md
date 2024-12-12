@@ -1,6 +1,6 @@
 # Web Development - Fall 2024
 
-This repository contains coursework for the Web Development course at Northeastern University, taught by Hunter Jorgensen. The course provides a comprehensive introduction to both front-end and back-end web development.
+This repository contains coursework for the Web Development course. The course provides a comprehensive introduction to both front-end and back-end web development.
 
 ## Technologies Used
 
