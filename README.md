@@ -12,7 +12,7 @@ Database: **MongoDB**
 
 Deployment: **GitHub Pages, Render**
 
-Course Projects
+**Course Projects**
 
 The primary focus of this repository is the three projects completed during the course:
 
