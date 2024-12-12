@@ -1,12 +1,22 @@
-Web Development - Fall 2024
+**Web Development - Fall 2024**
 
 This repository contains my coursework for the Web Development - Fall 2024 course taught by Hunter Jorgensen at Northeastern University. The course provided a comprehensive introduction to modern web development, focusing on front-end and back-end technologies.
+
+**Technologies Used**
+
+Frontend: **HTML, CSS, JavaScript, React**
+
+Backend: **Node.js, Express**
+
+Database: **MongoDB**
+
+Deployment: **GitHub Pages, Render**
 
 Course Projects
 
 The primary focus of this repository is the three projects completed during the course:
 
-1. Project 1: Personal Website
+**Project 1: Personal Website**
 
 Objective: Create a personal website using HTML, CSS, and basic JavaScript.
 
@@ -20,7 +30,7 @@ Basic interactivity with JavaScript
 
 Description: This project showcases my ability to design and develop a static personal portfolio website.
 
-2. Project 2: Minesweeper Game
+**Project 2: Minesweeper Game**
 
 Objective: Develop a Minesweeper game using React.
 
@@ -34,7 +44,7 @@ Dynamic rendering and user interaction
 
 Description: This project highlights my proficiency with React for building interactive client-side applications.
 
-3. Project 3: Twitter-like App
+**Project 3: Twitter-like App**
 
 Objective: Build a full-stack Twitter-like app with Node.js, Express, and MongoDB.
 
@@ -57,13 +67,3 @@ Other Coursework
 In addition to the projects, this repository includes:
 
 Mini Assignments: Practice exercises focusing on individual technologies such as JavaScript, React, and MongoDB. (See the mini-assignments/ folder.)
-
-Technologies Used
-
-Frontend: HTML, CSS, JavaScript, React
-
-Backend: Node.js, Express
-
-Database: MongoDB
-
-Deployment: GitHub Pages, Render
