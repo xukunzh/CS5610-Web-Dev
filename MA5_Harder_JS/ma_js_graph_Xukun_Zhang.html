@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Click Event</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      border: 2px solid purple;
+      background-color: white;
+    }
+    .active {
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="square" data-row="0" data-col="0"></div>
+    <div class="square" data-row="0" data-col="1"></div>
+    <div class="square" data-row="0" data-col="2"></div>
+    <div class="square" data-row="1" data-col="0"></div>
+    <div class="square" data-row="1" data-col="1"></div>
+    <div class="square" data-row="1" data-col="2"></div>
+    <div cl3ass="square" data-row="2" data-col="0"></div>
+    <div class="square" data-row="2" data-col="1"></div>
+    <div class="square" data-row="2" data-col="2"></div>
+  </div>
+
+  <script>
+    // // Task 1
+    // const squares = document.querySelectorAll('.square');
+
+    // squares.forEach(square => {
+    // square.addEventListener('click', function() {
+    //     this.classList.toggle('active');});
+    // });
+
+    // Task 2
+    // Select all squares
+    const squares = document.querySelectorAll('.square');
+
+    function getSquare(row, col) {
+      return document.querySelector(`.square[data-row="${row}"][data-col="${col}"]`);
+    }
+
+    // Add click event listener to each square
+    squares.forEach(square => {
+      square.addEventListener('click', function() {
+        const row = parseInt(this.getAttribute('data-row'));
+        const col = parseInt(this.getAttribute('data-col'));
+        
+        // Toggle the clicked square
+        this.classList.toggle('active');
+        
+        const directions = [
+          { row: row - 1, col: col },  
+          { row: row + 1, col: col },  
+          { row: row, col: col - 1 },  
+          { row: row, col: col + 1 } 
+        ];
+        
+        // Toggle adjacent squares
+        directions.forEach(direction => {
+          const adjSquare = getSquare(direction.row, direction.col);
+          if (adjSquare) adjSquare.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
