@@ -43,5 +43,5 @@ The repository includes the following three main projects:
 
 In addition to the main projects, this repository includes:
 
-- **Mini Assignments**: Practice exercises focusing on individual technologies like JavaScript, React, and MongoDB. (See the `mini-assignments/` folder.)
+- **Mini Assignments**: Practice exercises focusing on individual technologies like JavaScript, React, and MongoDB. 
 
