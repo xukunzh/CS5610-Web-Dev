@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ff6f61;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004d40;
+    transform: translateY(-3px);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00796b;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro-text {
+        padding: 15px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .intro-text {
+        padding: 20px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    .intro-text {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
