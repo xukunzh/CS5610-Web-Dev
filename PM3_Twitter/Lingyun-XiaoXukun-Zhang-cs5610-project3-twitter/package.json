@@ -1,0 +1,33 @@
+{
+  "name": "cs5610_lingyunxiao_xukunzhang_project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "20.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": " npm run install-all && npm run build --prefix frontend",
+    "prod": "npm run start --prefix backend",
+    "install-all": "npm install --prefix frontend && npm install --prefix backend",
+    "build-front-and-run-end": "npm run build --prefix frontend && npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloelingyunxiao/Lingyun-XiaoXukun-Zhang-cs5610-project3-twitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chloelingyunxiao/Lingyun-XiaoXukun-Zhang-cs5610-project3-twitter/issues"
+  },
+  "homepage": "https://github.com/chloelingyunxiao/Lingyun-XiaoXukun-Zhang-cs5610-project3-twitter#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

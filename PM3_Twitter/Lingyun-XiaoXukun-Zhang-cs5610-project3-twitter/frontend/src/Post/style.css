@@ -1,0 +1,165 @@
+.post {
+  border: none;
+  border-radius: 16px;
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.post:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #f0f2f5;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nickname {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0f1419;
+}
+
+.username {
+  color: #536471;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.username:hover {
+  text-decoration: underline;
+}
+
+.timestamp {
+  font-size: 13px;
+  color: #536471;
+  margin-top: 2px;
+}
+
+.post-content {
+  margin-left: 60px;
+}
+
+.post-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f1419;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Action buttons container */
+.post-content > div {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Update link style */
+.post-content a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #e8f5fd;
+  color: #1d9bf0;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.post-content a:hover {
+  background-color: #d8ebf9;
+}
+
+.update-button,
+.delete-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  min-width: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Update button specific styles */
+.update-button {
+  background-color: #e8f5fd;
+  color: #1d9bf0;
+}
+
+.update-button:hover {
+  background-color: #d8ebf9;
+}
+
+/* Delete button specific styles */
+.delete-button {
+  background-color: #ffeaea;
+  color: #f4212e;
+}
+
+.delete-button:hover {
+  background-color: #ffe2e2;
+}
+
+.post-media {
+  margin-top: 12px;
+  justify-content: left;
+}
+
+.post-media img {
+  max-width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.post-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .post {
+    margin: 12px 0;
+    padding: 12px;
+  }
+
+  .post-content {
+    margin-left: 0;
+  }
+}

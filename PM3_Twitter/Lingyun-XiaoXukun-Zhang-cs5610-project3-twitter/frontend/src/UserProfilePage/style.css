@@ -1,0 +1,140 @@
+.user-info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .description-container {
+    margin: 16px 0;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .edit-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .edit-description textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+  }
+  
+  .description-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  
+  .description-buttons button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .description-buttons button:first-child {
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .description-buttons button:last-child {
+    background-color: #f0f0f0;
+  }
+  
+  .description-display {
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .description-display:hover {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  .edit-hint {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+  }
+
+  .description-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .char-count {
+    color: #666;
+    font-size: 13px;
+  }
+  
+  .char-count.near-limit {
+    color: #ff9800;
+  }
+  
+  .char-count.at-limit {
+    color: #f44336;
+  }
+  
+  .username-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-details {
+    color: #536471;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .no-posts {
+    text-align: center;
+    color: #536471;
+    padding: 20px;
+  }
+  @media (max-width: 640px) {
+    .profile-container {
+      padding: 16px;
+    }
+  
+    .user-info-container {
+      padding: 16px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .user-details {
+      text-align: center;
+    }
+  }

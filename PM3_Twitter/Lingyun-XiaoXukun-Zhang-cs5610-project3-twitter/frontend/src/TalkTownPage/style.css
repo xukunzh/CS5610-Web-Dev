@@ -1,0 +1,150 @@
+/* Page container */
+.page-container {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .content-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Post styles */
+  .post {
+    border: none;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .post:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nickname {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a1a1a;
+  }
+  
+  .username {
+    color: #65676b;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .username:hover {
+    text-decoration: underline;
+  }
+  
+  .timestamp {
+    font-size: 13px;
+    color: #65676b;
+    margin-top: 2px;
+  }
+  
+  .post-content {
+    padding-left: 60px;
+  }
+  
+  .post-content p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #1a1a1a;
+  }
+  
+  /* Action buttons */
+  .post-content > div {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .post-content a {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1877f2;
+    background-color: #e7f3ff;
+    transition: background-color 0.2s;
+  }
+  
+  .post-content a:hover {
+    background-color: #dbe7f2;
+  }
+  
+  .delete-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    color: #dc3545;
+    background-color: #ffebee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-button:hover {
+    background-color: #ffe5e8;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-state p {
+    color: #65676b;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 640px) {
+    .content-wrapper {
+      padding: 12px;
+    }
+    
+    .post-content {
+      padding-left: 0;
+    }
+  }
